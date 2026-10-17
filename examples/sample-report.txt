@@ -1,0 +1,31 @@
+Linux Workstation Health Check
+Date: 2026-01-15 10:30:00 UTC
+Hostname: example-workstation
+Disk usage threshold: 80%
+
+== Filesystem usage ==
+Filesystem      Size  Used  Available  Capacity  Mounted on
+/dev/example1    50G   20G       30G       40%  /
+/dev/example2   100G   92G        8G       92%  /data
+
+== Filesystems requiring attention ==
+WARNING: /data is using 92% of its available capacity (threshold: 80%).
+
+== Time synchronization ==
+Local time: Thu 2026-01-15 11:30:00 CET
+Universal time: Thu 2026-01-15 10:30:00 UTC
+RTC time: Thu 2026-01-15 10:30:00
+Time zone: Europe/Madrid (CET, +0100)
+System clock synchronized: yes
+NTP service: active
+RTC in local TZ: no
+
+== Selected services ==
+example-service: active
+example-scheduler: active
+
+== Summary ==
+Warnings: 1
+Errors: 0
+
+Report saved to: examples/health-report-example.txt
